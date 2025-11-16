@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.31"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "transazioni_finanziarie",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "transazioni_finanziarie::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-transazioni_finanziarie-Debug-7f5cdd75cd4235602149.json",
+					"name" : "transazioni_finanziarie",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/emanuelearrigoni/Desktop/1\u00b0 anno ingegneria/Laboratorio_Programmazione/transazioni_finanziarie/cmake-build-debug",
+		"source" : "/Users/emanuelearrigoni/Desktop/1\u00b0 anno ingegneria/Laboratorio_Programmazione/transazioni_finanziarie"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

@@ -1,0 +1,3 @@
+/Users/emanuelearrigoni/Desktop/1° anno ingegneria/Laboratorio_Programmazione/transazioni_finanziarie/cmake-build-debug/CMakeFiles/transazioni_finanziarie.dir
+/Users/emanuelearrigoni/Desktop/1° anno ingegneria/Laboratorio_Programmazione/transazioni_finanziarie/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/emanuelearrigoni/Desktop/1° anno ingegneria/Laboratorio_Programmazione/transazioni_finanziarie/cmake-build-debug/CMakeFiles/rebuild_cache.dir

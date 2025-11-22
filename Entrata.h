@@ -13,7 +13,7 @@ class Entrata : public Movimento{
     Entrata(const std::string &data, const std::string &descrizione, int importo);
     bool operator==(const Entrata& e) const;
     Entrata(const Entrata& e);
-
+    int effettoSaldo() const override;
 
 };
 

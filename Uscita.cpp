@@ -10,3 +10,7 @@ Uscita::Uscita(const std::string &data, const std::string &descrizione, int impo
     this->record = data + ";" + descrizione + ";" + std::to_string(importo);
 
 }
+
+int Uscita::effettoSaldo() const {
+    return (-this->importo);//Nel caso dell'uscita l'effetto sul saldo sarà negativo (il saldo del conto corrente deve diminuire!!)
+}

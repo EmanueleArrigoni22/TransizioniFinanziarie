@@ -36,6 +36,8 @@ public:
         this->data = data;
     }
 
+    virtual int effettoSaldo() const = 0;//metodo per specificare, tramite polimorfismo, l'effetto dello specifico movimento sul saldo(devo sottrarre o sommare al saldo corrente??)
+
     protected:
         std::string data;
         std::string descrizione;

@@ -8,3 +8,7 @@ Entrata::Entrata(const std::string &data, const std::string &descrizione, int im
 
     this->record = data + ";" + descrizione + ";" + std::to_string(importo);
 }
+
+int Entrata::effettoSaldo() const {
+    return this->importo;
+}

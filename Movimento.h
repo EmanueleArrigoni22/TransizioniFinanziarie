@@ -10,7 +10,7 @@
 class Movimento {
 public:
     Movimento(const std::string &data, const std::string &descrizione, int importo);
-    virtual ~Movimento() = 0;
+    virtual ~Movimento() = default;
     std::string getData() const {
         return data;
     }

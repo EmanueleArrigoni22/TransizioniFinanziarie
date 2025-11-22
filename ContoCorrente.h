@@ -16,9 +16,9 @@ class ContoCorrente {
         std::string nominativo;
         std::string path;
         std::list<std::unique_ptr<std::string>> operazioni;
-        ContoCorrente(std::string nominativo);
+        explicit ContoCorrente(std::string nominativo);
         ~ContoCorrente();
-        bool registraMovimento(const Movimento &m);
+        bool registraMovimento(std::unique_ptr<Movimento>m);
 
 };
 

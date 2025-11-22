@@ -3,27 +3,21 @@
 #include <fstream>
 #include <string>
 
+#include "ContoCorrente.h"
+#include "Entrata.h"
+#include "Uscita.h"
+
 int main() {
-    // Percorso completo del file (puoi personalizzarlo)
-    std::string path = "/Users/emanuelearrigoni/Desktop/prova.csv";
-    // Su Linux/Mac sarebbe tipo "/home/user/dati.csv"
-    std::ofstream file(path);
 
-    // Verifica che il file sia stato aperto correttamente
-    if (!file.is_open()) {
-        std::cerr << "Errore: impossibile creare il file!" << std::endl;
-        return 1;
-    }
+    std::unique_ptr<ContoCorrente> contoCorrente;
+    contoCorrente = std::make_unique<ContoCorrente>("Mario Rossi");
+    std::unique_ptr<Entrata> entrata;
+    entrata = std::make_unique<Entrata>("22/11/2025","Regalo di Compleanno",500);
+    contoCorrente->registraMovimento(std::move(entrata));
+    std::unique_ptr<Uscita> uscita;
+    uscita = std::make_unique<Uscita>("22/11/2025","Spese compleanno",200);
+    contoCorrente->registraMovimento(std::move(uscita));
 
-    // Scrittura di alcuni dati CSV
-    file << "Nome,Cognome,Età\n";
-    file << "Mario,Rossi,30\n";
-    file << "Luca,Bianchi,25\n";
-    file << "Ana,Verdi,28\n";
-
-    file.close();
-
-    std::cout << "File CSV creato correttamente in:\n" << path << std::endl;
 
     return 0;
 }

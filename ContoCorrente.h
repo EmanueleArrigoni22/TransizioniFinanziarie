@@ -6,15 +6,19 @@
 #define CONTOCORRENTE_H
 #include <list>
 #include <string>
+#include"Movimento.h"
 
 
 class ContoCorrente {
     public:
-        int saldoCorrente;
 
+        int saldoCorrente;
+        std::string nominativo;
+        std::string path;
         std::list<std::unique_ptr<std::string>> operazioni;
-        ContoCorrente();
+        ContoCorrente(std::string nominativo);
         ~ContoCorrente();
+        bool registraMovimento(const Movimento &m);
 
 };
 

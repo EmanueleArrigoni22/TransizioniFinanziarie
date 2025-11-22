@@ -3,3 +3,7 @@
 //
 
 #include "Movimento.h"
+
+Movimento::Movimento(const std::string &data, const std::string &descrizione, int importo) {}
+
+Movimento::~Movimento() {}

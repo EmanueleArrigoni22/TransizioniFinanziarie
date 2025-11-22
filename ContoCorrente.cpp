@@ -3,6 +3,9 @@
 //
 
 #include "ContoCorrente.h"
+#include <fstream>
+#include<iostream>
+#include <string>
 
 
 ContoCorrente::ContoCorrente(std::string nominativo):saldoCorrente(0),nominativo(nominativo){

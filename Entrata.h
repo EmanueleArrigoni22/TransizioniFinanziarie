@@ -10,10 +10,9 @@
 class Entrata : public Movimento{
 
     public:
-    Entrata();
+    Entrata(const std::string &data, const std::string &descrizione, int importo);
     bool operator==(const Entrata& e) const;
     Entrata(const Entrata& e);
-    bool registraMovimento(const ContoCorrente &c) override;
 
 
 };

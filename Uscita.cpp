@@ -3,18 +3,10 @@
 //
 
 #include "Uscita.h"
+#include "Movimento.h"
 
-Uscita::Uscita(const std::string &data, const std::string &descrizione, int importo,const ContoCorrente & c): data(data),descrizione(descrizione), importo(importo) {
+Uscita::Uscita(const std::string &data, const std::string &descrizione, int importo): Movimento(data,descrizione,importo) {
 
-    registraMovimento(c);
-
-}
-
-bool Uscita::registraMovimento(const ContoCorrente &c)override{
-    bool result = false;
-
-
-
-    return result;
+    this->record = data + ";" + descrizione + ";" + std::to_string(importo);
 
 }

@@ -4,6 +4,6 @@
 
 #include "Movimento.h"
 
-Movimento::Movimento(const std::string &data, const std::string &descrizione, int importo): descrizione(descrizione), importo(importo) {}
+Movimento::Movimento(const std::string &data, const std::string &descrizione, int importo): data(data),descrizione(descrizione), importo(importo) {}
 
 

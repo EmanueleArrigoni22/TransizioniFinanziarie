@@ -15,7 +15,7 @@ ContoCorrente::ContoCorrente(std::string const nominativo):saldoCorrente(0),nomi
     if (!file.is_open()) {
         std::cerr << "Errore: impossibile creare il file!" << std::endl;
     }
-    file << "Data,Descrizione,Tipo,Importo,Saldo\n";
+    file << "Data;Descrizione;Tipo;Importo;Saldo\n";
     file.close();
     std::cout << nominativo << std::endl;
 }
@@ -24,13 +24,14 @@ bool ContoCorrente::registraMovimento(std::unique_ptr<Movimento> m) {
     bool successo = false;
     if (m->getRecord() != "") {
         operazioni.push_back(std::make_unique<std::string>(m->getRecord()));
-        std::ofstream file(path);
+        std::ofstream file(path,std::ios::app);
         if (!file.is_open()) {
             std::cerr << "Errore: impossibile creare il file!" << std::endl;
         }
 
         this->saldoCorrente += m->effettoSaldo();
         file << m->getRecord() + ";" + std::to_string(saldoCorrente);
+        file << "\n";
         successo = true;
     }
     return successo;

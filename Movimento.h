@@ -9,7 +9,7 @@
 
 class Movimento {
 public:
-    Movimento(const std::string &data, const std::string &descrizione, int importo);
+    Movimento(const std::string &data, const std::string &descrizione, double importo);
     virtual ~Movimento() = default;
     std::string getData() const {
         return data;
@@ -17,7 +17,7 @@ public:
     std::string getDescrizione() const {
         return descrizione;
     }
-    int getImporto() const {
+    double getImporto() const {
         return importo;
     }
     std::string getRecord() const {
@@ -26,7 +26,7 @@ public:
     void setRecord(const std::string &record) {
         this->record = record;
     }
-    void setImporto(int importo) {
+    void setImporto(double importo) {
         this->importo = importo;
     }
         void setDescrizione(const std::string &descrizione) {

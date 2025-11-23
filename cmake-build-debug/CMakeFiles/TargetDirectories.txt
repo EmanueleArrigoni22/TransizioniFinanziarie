@@ -1,3 +1,5 @@
 /Users/emanuelearrigoni/Desktop/1°_anno_ingegneria/Laboratorio_Programmazione/transazioni_finanziarie/cmake-build-debug/CMakeFiles/transazioni_finanziarie.dir
 /Users/emanuelearrigoni/Desktop/1°_anno_ingegneria/Laboratorio_Programmazione/transazioni_finanziarie/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/emanuelearrigoni/Desktop/1°_anno_ingegneria/Laboratorio_Programmazione/transazioni_finanziarie/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/emanuelearrigoni/Desktop/1°_anno_ingegneria/Laboratorio_Programmazione/transazioni_finanziarie/cmake-build-debug/CMakeFiles/transazioni_finanziarie_autogen_timestamp_deps.dir
+/Users/emanuelearrigoni/Desktop/1°_anno_ingegneria/Laboratorio_Programmazione/transazioni_finanziarie/cmake-build-debug/CMakeFiles/transazioni_finanziarie_autogen.dir

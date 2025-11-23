@@ -5,7 +5,7 @@
 #include "Uscita.h"
 #include "Movimento.h"
 
-Uscita::Uscita(const std::string &data, const std::string &descrizione, int importo): Movimento(data,descrizione,importo) {
+Uscita::Uscita(const std::string &data, const std::string &descrizione, double importo): Movimento(data,descrizione,importo) {
 
     this->record = data + ";" + descrizione + ";" + "Uscita" + ";" + std::to_string(importo);
 

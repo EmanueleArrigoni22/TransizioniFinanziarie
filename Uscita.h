@@ -9,7 +9,7 @@
 class Uscita : public Movimento{
 
 public:
-        Uscita(const std::string &data, const std::string &descrizione,int importo);
+        Uscita(const std::string &data, const std::string &descrizione,double importo);
         bool operator==(const Uscita& rhs) const;
         Uscita(const Uscita& u);
         int effettoSaldo() const override;

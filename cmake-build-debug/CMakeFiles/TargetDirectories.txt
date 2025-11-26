@@ -1,5 +1,13 @@
+/Users/emanuelearrigoni/Desktop/1°_anno_ingegneria/Laboratorio_Programmazione/transazioni_finanziarie/cmake-build-debug/CMakeFiles/core.dir
 /Users/emanuelearrigoni/Desktop/1°_anno_ingegneria/Laboratorio_Programmazione/transazioni_finanziarie/cmake-build-debug/CMakeFiles/transazioni_finanziarie.dir
 /Users/emanuelearrigoni/Desktop/1°_anno_ingegneria/Laboratorio_Programmazione/transazioni_finanziarie/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/emanuelearrigoni/Desktop/1°_anno_ingegneria/Laboratorio_Programmazione/transazioni_finanziarie/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/emanuelearrigoni/Desktop/1°_anno_ingegneria/Laboratorio_Programmazione/transazioni_finanziarie/cmake-build-debug/CMakeFiles/core_autogen_timestamp_deps.dir
+/Users/emanuelearrigoni/Desktop/1°_anno_ingegneria/Laboratorio_Programmazione/transazioni_finanziarie/cmake-build-debug/CMakeFiles/core_autogen.dir
 /Users/emanuelearrigoni/Desktop/1°_anno_ingegneria/Laboratorio_Programmazione/transazioni_finanziarie/cmake-build-debug/CMakeFiles/transazioni_finanziarie_autogen_timestamp_deps.dir
 /Users/emanuelearrigoni/Desktop/1°_anno_ingegneria/Laboratorio_Programmazione/transazioni_finanziarie/cmake-build-debug/CMakeFiles/transazioni_finanziarie_autogen.dir
+/Users/emanuelearrigoni/Desktop/1°_anno_ingegneria/Laboratorio_Programmazione/transazioni_finanziarie/cmake-build-debug/test/CMakeFiles/runAllTests.dir
+/Users/emanuelearrigoni/Desktop/1°_anno_ingegneria/Laboratorio_Programmazione/transazioni_finanziarie/cmake-build-debug/test/CMakeFiles/edit_cache.dir
+/Users/emanuelearrigoni/Desktop/1°_anno_ingegneria/Laboratorio_Programmazione/transazioni_finanziarie/cmake-build-debug/test/CMakeFiles/rebuild_cache.dir
+/Users/emanuelearrigoni/Desktop/1°_anno_ingegneria/Laboratorio_Programmazione/transazioni_finanziarie/cmake-build-debug/test/CMakeFiles/runAllTests_autogen_timestamp_deps.dir
+/Users/emanuelearrigoni/Desktop/1°_anno_ingegneria/Laboratorio_Programmazione/transazioni_finanziarie/cmake-build-debug/test/CMakeFiles/runAllTests_autogen.dir

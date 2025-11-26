@@ -7,7 +7,7 @@
 
 Uscita::Uscita(const std::string &data, const std::string &descrizione, double importo): Movimento(data,descrizione,importo) {
     if (importo < 0)
-        importo = -importo;
+        this->importo = -importo;
     this->record = data + ";" + descrizione + ";" + "Uscita" + ";" + std::to_string(importo);
 
 }

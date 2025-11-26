@@ -5,10 +5,11 @@
 #include "Entrata.h"
 
 Entrata::Entrata(const std::string &data, const std::string &descrizione, double importo): Movimento(data,descrizione,importo) {
-
+    if (importo < 0)
+        importo = -importo;
     this->record = data + ";" + descrizione + ";" + "Entrata" + ";" + std::to_string(importo);
 }
 
-int Entrata::effettoSaldo() const {
+double Entrata::effettoSaldo() const {
     return this->importo;
 }

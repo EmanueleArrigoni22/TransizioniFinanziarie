@@ -9,7 +9,7 @@
 
 class Movimento {
 public:
-    Movimento(const std::string &data, const std::string &descrizione, double importo);
+    explicit Movimento(const std::string &data, const std::string &descrizione, double importo);
     virtual ~Movimento() = default;
     std::string getData() const {
         return data;
@@ -36,12 +36,12 @@ public:
         this->data = data;
     }
 
-    virtual int effettoSaldo() const = 0;//metodo per specificare, tramite polimorfismo, l'effetto dello specifico movimento sul saldo(devo sottrarre o sommare al saldo corrente??)
+    virtual double effettoSaldo() const = 0;//metodo per specificare, tramite polimorfismo, l'effetto dello specifico movimento sul saldo(devo sottrarre o sommare al saldo corrente??)
 
     protected:
         std::string data;
         std::string descrizione;
-        int importo;
+        double importo;
         std::string record;//la stringa che deve contenere tutti i dati da salvare sul csv(es: tipoMovimento;data;descrizione;importo)
 
 };

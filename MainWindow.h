@@ -21,17 +21,18 @@
 
 class MainWindow : public QMainWindow
 {
-    Q_OBJECT
+    Q_OBJECT//è una macro di QT che permette al compilatore di riconoscere che questa non è una semplice classe c++ ma deve comportarsi in un modo particolare(per esempio linkare le funzioni ai bottoni)
 
 public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
 private slots:
-    void creaNuovoConto();
-    void onContoSelezionato(int index);
-    void registraEntrata();
-    void registraUscita();
+    void creaNuovoConto();//slot QT
+    void onContoSelezionato(int index);//slot QT
+    void registraEntrata();//slot QT
+    void registraUscita();//slot QT
+    //Queste slot funzionano solamente se esiste il comando Q_OBJECT
 
 private:
     // GUI components

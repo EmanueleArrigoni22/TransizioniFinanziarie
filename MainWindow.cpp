@@ -53,7 +53,7 @@ void MainWindow::creaNuovoConto()
 {
         bool ok;
         QString nome = QInputDialog::getText(this, "Nuovo Conto",
-                                             "Nome del conto:",
+                                             "Intestatario del conto:",
                                              QLineEdit::Normal,
                                              "", &ok);
 

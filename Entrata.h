@@ -10,10 +10,10 @@
 class Entrata : public Movimento{
 
     public:
-    Entrata(const std::string &data, const std::string &descrizione, double importo);
+    explicit Entrata(const std::string &data, const std::string &descrizione, double importo);
     bool operator==(const Entrata& e) const;
     Entrata(const Entrata& e);
-    int effettoSaldo() const override;
+    double effettoSaldo() const override;
 
 };
 

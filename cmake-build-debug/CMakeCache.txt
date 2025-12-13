@@ -188,7 +188,7 @@ CMAKE_OSX_DEPLOYMENT_TARGET:STRING=
 
 //The product will be built against the headers and libraries located
 // inside the indicated SDK.
-CMAKE_OSX_SYSROOT:PATH=/Library/Developer/CommandLineTools/SDKs/MacOSX26.0.sdk
+CMAKE_OSX_SYSROOT:PATH=/Library/Developer/CommandLineTools/SDKs/MacOSX26.1.sdk
 
 //No help, variable specified on the command line.
 CMAKE_PREFIX_PATH:UNINITIALIZED=/opt/homebrew/opt/qt
@@ -267,32 +267,20 @@ CMAKE_TAPI:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/tapi
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=ON
 
-//The directory containing a CMake configuration file for GTest.
-GTest_DIR:PATH=/opt/homebrew/lib/cmake/GTest
-
 //Path to a program.
 MACDEPLOYQT_EXECUTABLE:FILEPATH=/opt/homebrew/opt/qt/bin/macdeployqt
 
 //Include for the OpenGL GLU library
-OPENGL_GLU_INCLUDE_DIR:PATH=/Library/Developer/CommandLineTools/SDKs/MacOSX26.0.sdk/System/Library/Frameworks/OpenGL.framework
+OPENGL_GLU_INCLUDE_DIR:PATH=/Library/Developer/CommandLineTools/SDKs/MacOSX26.1.sdk/System/Library/Frameworks/OpenGL.framework
 
 //Include for OpenGL
-OPENGL_INCLUDE_DIR:PATH=/Library/Developer/CommandLineTools/SDKs/MacOSX26.0.sdk/System/Library/Frameworks/OpenGL.framework
+OPENGL_INCLUDE_DIR:PATH=/Library/Developer/CommandLineTools/SDKs/MacOSX26.1.sdk/System/Library/Frameworks/OpenGL.framework
 
 //OpenGL GL library
-OPENGL_gl_LIBRARY:FILEPATH=/Library/Developer/CommandLineTools/SDKs/MacOSX26.0.sdk/System/Library/Frameworks/OpenGL.framework
+OPENGL_gl_LIBRARY:FILEPATH=/Library/Developer/CommandLineTools/SDKs/MacOSX26.1.sdk/System/Library/Frameworks/OpenGL.framework
 
 //OpenGL GLU library
-OPENGL_glu_LIBRARY:FILEPATH=/Library/Developer/CommandLineTools/SDKs/MacOSX26.0.sdk/System/Library/Frameworks/OpenGL.framework
-
-//Value Computed by CMake
-Project_BINARY_DIR:STATIC=/Users/emanuelearrigoni/Desktop/1°_anno_ingegneria/Laboratorio_Programmazione/transazioni_finanziarie/cmake-build-debug
-
-//Value Computed by CMake
-Project_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-Project_SOURCE_DIR:STATIC=/Users/emanuelearrigoni/Desktop/1°_anno_ingegneria/Laboratorio_Programmazione/transazioni_finanziarie
+OPENGL_glu_LIBRARY:FILEPATH=/Library/Developer/CommandLineTools/SDKs/MacOSX26.1.sdk/System/Library/Frameworks/OpenGL.framework
 
 //Additional directories where find(Qt6 ...) host Qt components
 // are searched
@@ -535,10 +523,8 @@ CMAKE_TAPI-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
-//Details about finding GTest
-FIND_PACKAGE_MESSAGE_DETAILS_GTest:INTERNAL=[/opt/homebrew/lib/cmake/GTest/GTestConfig.cmake][c ][v1.17.0()]
 //Details about finding OpenGL
-FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[/Library/Developer/CommandLineTools/SDKs/MacOSX26.0.sdk/System/Library/Frameworks/OpenGL.framework][/Library/Developer/CommandLineTools/SDKs/MacOSX26.0.sdk/System/Library/Frameworks/OpenGL.framework][c ][v()]
+FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[/Library/Developer/CommandLineTools/SDKs/MacOSX26.1.sdk/System/Library/Frameworks/OpenGL.framework][/Library/Developer/CommandLineTools/SDKs/MacOSX26.1.sdk/System/Library/Frameworks/OpenGL.framework][c ][v()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //Details about finding WrapAtomic

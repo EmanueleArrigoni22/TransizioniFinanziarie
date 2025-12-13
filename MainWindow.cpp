@@ -21,8 +21,7 @@ MainWindow::MainWindow(QWidget *parent)
     comboConti = new QComboBox(this);
     mainLayout->addWidget(comboConti);
 
-    connect(comboConti, &QComboBox::currentIndexChanged,
-            this, &MainWindow::onContoSelezionato);
+    connect(comboConti, &QComboBox::currentIndexChanged,this, &MainWindow::onContoSelezionato);
 
     // Label saldo
     saldoLabel = new QLabel("Saldo: --", this);
@@ -37,14 +36,11 @@ MainWindow::MainWindow(QWidget *parent)
     mainLayout->addWidget(btnEntrata);
     mainLayout->addWidget(btnUscita);
 
-    connect(btnNuovoConto, &QPushButton::clicked,
-            this, &MainWindow::creaNuovoConto);
+    connect(btnNuovoConto, &QPushButton::clicked,this, &MainWindow::creaNuovoConto);
 
-    connect(btnEntrata, &QPushButton::clicked,
-            this, &MainWindow::registraEntrata);
+    connect(btnEntrata, &QPushButton::clicked,this, &MainWindow::registraEntrata);
 
-    connect(btnUscita, &QPushButton::clicked,
-            this, &MainWindow::registraUscita);
+    connect(btnUscita, &QPushButton::clicked,this, &MainWindow::registraUscita);
 }
 
 MainWindow::~MainWindow() {}
@@ -52,10 +48,7 @@ MainWindow::~MainWindow() {}
 void MainWindow::creaNuovoConto()
 {
         bool ok;
-        QString nome = QInputDialog::getText(this, "Nuovo Conto",
-                                             "Intestatario del conto:",
-                                             QLineEdit::Normal,
-                                             "", &ok);
+        QString nome = QInputDialog::getText(this, "Nuovo Conto","Intestatario del conto:",QLineEdit::Normal,"", &ok);
 
         if (!ok || nome.isEmpty())
                 return;

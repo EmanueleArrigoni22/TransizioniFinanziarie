@@ -7,7 +7,7 @@
 Entrata::Entrata(const std::string &data, const std::string &descrizione, double importo): Movimento(data,descrizione,importo) {
     if (importo < 0)
         this->importo = -importo;
-    this->record = data + ";" + descrizione + ";" + "Entrata" + ";" + std::to_string(importo);
+    this->record = "Entrata" + data + ";" + descrizione + ";" + std::to_string(importo);
 }
 
 double Entrata::effettoSaldo() const {

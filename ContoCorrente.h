@@ -10,6 +10,7 @@
 
 
 class ContoCorrente {
+
     public:
 
         double saldoCorrente;
@@ -25,6 +26,10 @@ class ContoCorrente {
         std::string getPath() const {
             return path;
         }
+        bool caricaMovimento(std::unique_ptr<Movimento>m);
+
+private:
+    void applicaMovimento(Movimento* m);
 };
 
 

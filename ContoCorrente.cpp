@@ -31,22 +31,43 @@ ContoCorrente::ContoCorrente(std::string const &nominativo):saldoCorrente(0),nom
 
 }
 
+
+void ContoCorrente::applicaMovimento(Movimento* m) {
+
+    operazioni.push_back(std::make_unique<std::string>(m->getRecord()));
+    this->saldoCorrente += m->effettoSaldo();
+
+    if (this->saldoCorrente < 0) {
+        std::cout << "!! ATTENZIONE: Saldo negativo per " << this->nominativo << std::endl;
+    }
+}
+
+
+
 bool ContoCorrente::registraMovimento(std::unique_ptr<Movimento> m) {
     bool successo = false;
     if (m->getRecord() != "") {
-        operazioni.push_back(std::make_unique<std::string>(m->getRecord()));
+
+        applicaMovimento(m.get());// passo il raw pointer alla funzione privata(devo solo leggere i dati, basta il puntatore grezzo)
         std::ofstream file(path,std::ios::app);
         if (!file.is_open()) {
             std::cerr << "Errore: impossibile creare il file!" << std::endl;
         }
-
-        this->saldoCorrente += m->effettoSaldo();
         file << m->getRecord() + ";" + std::to_string(saldoCorrente);
         file << "\n";
         successo = true;
         if (this->saldoCorrente < 0) {
             std::cout << "!!ATTENZIONE "<< this->nominativo << " !! Hai raggiunto un saldo Negativo!! Contatta al più presto la filiare" << std::endl;
         }
+    }
+    return successo;
+}
+
+bool ContoCorrente::caricaMovimento(std::unique_ptr<Movimento> m) {
+    bool successo = false;
+    if (m->getRecord() != "") {
+        applicaMovimento(m.get());
+        successo = true;
     }
     return successo;
 }

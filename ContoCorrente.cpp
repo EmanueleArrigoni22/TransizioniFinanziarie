@@ -10,14 +10,25 @@
 
 ContoCorrente::ContoCorrente(std::string const &nominativo):saldoCorrente(0),nominativo(nominativo){
     std:: cout << "ContoCorrente constructor" << std::endl;
-   this -> path = "/Users/emanuelearrigoni/Desktop/1°_anno_ingegneria/Laboratorio_Programmazione/transazioni_finanziarie/file_csv/" + nominativo +".csv";
-    std::ofstream file(path);
-    if (!file.is_open()) {
-        std::cerr << "Errore: impossibile creare il file!" << std::endl;
+    this->path = "../file_csv/" + nominativo + ".csv";
+
+    // 2. Controllo se il file esiste GIÀ
+    if (std::filesystem::exists(this->path)) {
+        // Il file esiste: NON fare nulla (non aprirlo, non sovrascriverlo)
+        std::cout << "Caricato conto esistente: " << nominativo << std::endl;
     }
-    file << "Data;Descrizione;Tipo;Importo;Saldo\n";
-    file.close();
-    std::cout << nominativo << std::endl;
+    else {
+        // Il file NON esiste: È un nuovo conto, crealo ora.
+        std::ofstream file(this->path);
+        if (!file.is_open()) {
+            std::cerr << "Errore: impossibile creare il file!" << std::endl;
+        } else {
+            file << "Tipo;Data;Descrizione;Importo;Saldo\n";
+            file.close();
+            std::cout << "Creato nuovo file per: " << nominativo << std::endl;
+        }
+    }
+
 }
 
 bool ContoCorrente::registraMovimento(std::unique_ptr<Movimento> m) {

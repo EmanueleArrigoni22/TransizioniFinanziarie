@@ -32,6 +32,8 @@ private slots:
     void onContoSelezionato(int index);//slot QT
     void registraEntrata();//slot QT
     void registraUscita();//slot QT
+    void recuperaConto();
+    void leggiDaiConti(const std::filesystem::path& filepath, int index);
     //Queste slot funzionano solamente se esiste il comando Q_OBJECT
 
 private:

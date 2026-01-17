@@ -46,3 +46,12 @@ TEST(ContoCorrenteTest,ContoNegativo) {
     EXPECT_EQ(c->getSaldo(), -500);
 
 }
+
+TEST(ContoCorrenteTest,CaricoDatiDalCsv) {
+    std::unique_ptr<ContoCorrente> c;
+    c = std::make_unique<ContoCorrente>("Vanessa Nottoli");
+    std::unique_ptr<Entrata> e;
+    e = std::make_unique<Entrata>("affitto", "2024-05-02", 500);
+    c->caricaMovimento(std::move(e));
+    EXPECT_EQ(c->getSaldo(), 500);
+}
